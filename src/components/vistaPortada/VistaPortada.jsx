@@ -1,11 +1,11 @@
 import Nova from '../nova/Nova.jsx';
 
-function CoverSections() {
+function VistaPortada() {
     return (
       <>
       <div>
         <section>
-          <h2>SOSTIBILIDADE</h2>
+          <h2>Novas Destacadas</h2>
             <article>
             <Nova titulo="Este é o título" artigo="Contido da nova primeira"/>
             <Nova titulo="Este é outro título" artigo="Contido da nova segunda"/>
@@ -18,16 +18,9 @@ function CoverSections() {
             <Nova titulo="Este é outro título" artigo="Contido da nova segunda"/>
             </article>
         </section>
-        <section>
-          <h2>FAKE NEWS</h2>
-          <article>
-            <Nova titulo="Este é o título" artigo="Contido da nova primeira"/>
-            <Nova titulo="Este é outro título" artigo="Contido da nova segunda"/>
-            </article>
-        </section>
       </div>
       </>
     );
   }
   
-  export default CoverSections;
+  export default VistaPortada;
