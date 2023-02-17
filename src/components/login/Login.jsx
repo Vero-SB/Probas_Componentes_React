@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react"
+import styles from './Login.module.css'
 
 function Login() {
 let [usuario, setUsuario] = useState("")
@@ -13,17 +14,17 @@ let [contrasinal, setContrasinal] = useState("")
 
   return (
     <>
-    <div className='Login'>
-        <fieldset>
-        <label>Usuario
-            <input type="text" name="usuario" value={usuario} onInput={manexadorDeInputUsuario}/>
-            <p>contido input usuario: {usuario}</p>
+    <div className={styles.login}>
+        <fieldset className={styles.fieldset}>
+        <label className={styles.label}>Usuario
+            <input className={styles.casilla} type="text" name="usuario" value={usuario} onInput={manexadorDeInputUsuario}/>
+            <p className={styles.p}>contido input usuario: {usuario}</p>
         </label>
-        <label>Contrasinal
-            <input type="password" name='contrasinal' value={contrasinal} onInput={manexadorDeInputContrasinal}/>
-            <p>contido input contrasinal: {contrasinal}</p>
+        <label className={styles.label}>Contrasinal
+            <input className={styles.casilla} type="password" name='contrasinal' value={contrasinal} onInput={manexadorDeInputContrasinal}/>
+            <p className={styles.p}>contido input contrasinal: {contrasinal}</p>
         </label>
-        <label>
+        <label className={styles.label}>
             <input type="submit" value="Entrar"></input>
         </label>
         </fieldset>

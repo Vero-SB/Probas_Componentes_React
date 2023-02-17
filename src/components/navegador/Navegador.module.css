@@ -1,0 +1,27 @@
+.ul {
+    display: flex;
+    justify-content: center;  
+    list-style-type: none;
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+
+.li {
+    border: solid;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em; 
+    background-color:rgb(31, 66, 158);
+    color:white;
+    font-size: 1rem; 
+}
+
+.vista {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-color: rgb(31, 66, 158);
+    width:100%;
+
+}

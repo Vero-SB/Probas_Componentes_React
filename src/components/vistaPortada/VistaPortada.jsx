@@ -1,9 +1,33 @@
-import Nova from '../nova/Nova.jsx';
+import Nova from '../nova/Nova.jsx'
+import styles from './VistaPortada.module.css'
+
+function VistaPortada(props) {
+  const novas = props.novas
+  const compNovas = novas.map (
+    cadaNova=> 
+    <Nova titulo={cadaNova.titulo} artigo={cadaNova.artigo}/>
+  )
+
+return(
+  <>
+  <div className={styles.vistaportada}>
+    {compNovas}
+  </div>
+  </>
+)
+}
+
+export default VistaPortada;
+
+
+/*
+import Nova from '../nova/Nova.jsx'
+import styles from './VistaPortada.module.css'
 
 function VistaPortada() {
     return (
       <>
-      <div>
+      <div className={styles.vistaportada}>
         <section>
           <h2>Novas Destacadas</h2>
             <article>
@@ -24,3 +48,4 @@ function VistaPortada() {
   }
   
   export default VistaPortada;
+  */
